@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-    <title>Sit on chair Jerzy Drobor - project</title>
+    <title>Sit on chair Jerzy Drobot - project</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,400italic,500,300,700' rel='stylesheet' type='text/css'>
+  <script src="js/app.js"></script>
 </head>
 <body>
   <header>
@@ -15,16 +16,16 @@
       </div>
       <nav>
        <ul class="main_nav">
-          <li><a href=" ">O FIRMIE</a>
+          <li class="sub"><a href="">O FIRMIE</a>
             <ul class="sub_nav">
               <li><span class="triangle"></span></li>
-              <li><a href=" ">Aktualności</a></li><!--
-          --><li><a href=" ">Nasz team</a></li><!--
-          --><li><a href=" ">Historia</a></li>
+              <li><a href="">Aktualności</a></li><!--
+          --><li><a href="">Nasz team</a></li><!--
+          --><li><a href="">Historia</a></li>
             </ul>
          </li>
-      <li><a href=" ">GALERIA</a></li>
-      <li><a href=" ">KONTAKT</a></li>
+      <li><a href="">GALERIA</a></li>
+      <li><a href="">KONTAKT</a></li>
         </ul>
       </nav>
       <div>
@@ -32,16 +33,21 @@
   <!--Sekcja baneru górnego  -->  
   <section>
     <div class="container clearfix">
-      <div class="slides">
-      <div class="logo2">
-          <i class="fa fa-chevron-left fa-2x" aria-hidden="true" id="arrow_left"></i>
+      <div class="slides clearfix">
+        <i class="fa fa-chevron-left fa-2x prev" aria-hidden="true" id="arrow_left" ></i>
+      <div class="logo2 img1">
       </div>
+      <div class="logo2 img2">
+      </div>
+      <div class="logo2 img3">
+      </div>  
       <div class="logo-right">
-        <h1>SIT <span class="aqua">ON</span> OUR <span class="aqua">CHAIR</span></h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi odio dui, molestie eget dolor vitae, euismod gravida elit. Praesent non sem justo. Donec eu justo sit amet felis viverra mollis. Donec in eros efficitur, faucibus elit ac, molestie dui. Nunc laoreet nibh sed elementum blandit. Curabitur sed augue consequat, finibus nisl et, lobortis lectus.
+        <h1 class="black">SIT <span class="aqua">ON</span> OUR <span class="aqua">CHAIR</span></h1>
+        <p class="center">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi odio dui, molestie eget dolor vitae, euismod gravida elit. Praesent non sem justo. Donec eu justo sit amet felis viverra mollis. Donec in eros efficitur, faucibus elit ac, molestie dui. Nunc laoreet nibh sed elementum blandit.
         </p>
-         <i class="fa fa-chevron-right fa-2x" aria-hidden="true" id="arrow_right"></i>
+         <a class="more" href="http://www.google.com">ZOBACZ WIĘCEJ</a>
+          <i class="fa fa-chevron-right fa-2x next" aria-hidden="true" id="arrow_right"></i>
         </div>
       </div>
     </div>
@@ -50,15 +56,27 @@
   <section>
     <div class="container clearfix">
       <article class="left">
+        <div class="stripe">
+          <h3 class="borderbottom_small">
+          Chair CLAIR
+          </h3>
+        </div>  
       </article>
       <article class="middle">
+        <div class="stripe">
+          <h3 class="borderbottom_small">
+          Chair MARGARITA
+          </h3>
+        </div>
       </article>
       <article class="right">
-        <h3>
-        Find all boxes
+        <h3 class="borderbottom_small">
+        Finds all inputs
         </h3>
-        <p>
-         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi odio dui, molestie eget dolor vitae, euismod gravida elit. Praesent non sem justo. Donec eu justo sit amet felis viverra mollis. Donec in eros efficitur, faucibus elit ac, molestie dui.
+        <p class="rightmiddle">
+         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi odio dui, molestie eget dolor vitae, euismod gravida elit. Praesent non sem justo. Donec eu justo sit amet felis viverra mollis. 
+        </p>
+        <p class="rightmiddle">Donec in eros efficitur, faucibus elit ac, molestie dui.
         </p>
       </article>
     </div>
@@ -66,30 +84,206 @@
   <!--Sekcja CENNIK  -->  
   <section id="prices">
     <div class="container clearfix">
-      <h3 class="header">
+      <h3 class="borderbottom">
       <span>CENNIK</span>
       </h3>
-     <article class="box">
+    </div>
+    <div class="container clearfix">
+      <div class="boxcontainer">
+        <article class="box">
+          <div class="circle">
+            <span class="dot"></span>
+          </div>
+          <h3 class="plan">
+          BASIC PLAN
+          </h3>
+          <div class="bigCircle">
+          <h1 class="cost">85<sup>99</sup></h1>
+          <h2 class="pln">PLN/MSC</h2> 
+          </div>
+          <div class="darkgrey">
+          Zakup towaru + dowóz
+          </div>
+          <div class="lightgrey">
+          Sewis
+          </div> 
+          <div class="empty"></div>
+          <div class="empty"></div>
+          <a class="join" href="http://www.google.com">DOŁĄCZ</a>
+      </article>  
+      <article class="box">
+        <div class="circle">
+          <span class="dot"></span>
+        </div>
+        <h3 class="plan">
+          STANDARD PLAN
+        </h3>
+        <div class="bigCircle">
+          <h1 class="cost">95<sup>99</sup></h1>
+          <h2 class="pln">PLN/MSC</h2>
+        </div>
+        <div class="darkgrey">
+          Zakup towaru + dowóz
+        </div>
+         <div class="lightgrey">
+            Sewis
+        </div>
+        <div class="darkgrey">
+          Gwarancja 5 lat
+        </div>
+        <div class="empty"></div>
+        <a class="join" href="http://www.google.com">DOŁĄCZ</a>  
+    </article>  
+    <article class="box">
       <div class="circle">
         <span class="dot"></span>
+        </div>
+          <h3 class="plan">
+            ADVANCE PLAN
+          </h3>
+        <div class="bigCircle">
+          <h1 class="cost">211<sup>00</sup></h1>
+          <h2 class="pln">PLN/MSC</h2>
+        </div>
+        <div class="darkgrey">
+          Zakup towaru + dowóz
+        </div>
+         <div class="lightgrey">
+            Sewis
+        </div> 
+        <div class="darkgrey">
+          Gwarancja 5 lat
+        </div>
+        <div class="lightgrey">
+            Porady projektanta
+        </div> 
+          <a class="join" href="http://www.google.com">DOŁĄCZ</a> 
+        </article> 
       </div>
-      <h3>NAGŁÓWEK</h3>
-      <p>
-        Gingerbread donut candy topping chocolate bar brownie bonbon. Cookie carrot cake sweet tootsie roll. Jelly-o donut jelly-o chocolate cake macaroon danish dragée.
-      </p>
-      <a href="http://www.google.com">Więcej informacji &gt;</a>
-    </article>  
     </div>
   </section> 
+<!--  Sekcja kalkulatora zamówienia    -->
+<div class="cont_calc clearfix">      
+ <section class="application">
+    <div class="main_width">
+        <section class="choice_part inline">
+            <header class="align_left">
+                <h3 class="calc">SKOMPONUJ SWOJE KRZESŁO</h3>
+                <span class="green_bell"></span>
+            </header>
+
+            <div class="form">
+                <div class="drop_down_list">
+                    <span class="list_label">Wybierz rodzaj</span>
+                    <span class="list_arrow"></span>
+                    <ul class="list_panel">
+                        <li>Clair</li>
+                        <li>Margarita</li>
+                        <li>Selena</li>
+                    </ul>
+                </div>
+                <div class="drop_down_list">
+                    <span class="list_label">Wybierz kolor</span>
+                    <span class="list_arrow"></span>
+                    <ul class="list_panel">
+                        <li>Czerwony</li>
+                        <li>Czarny</li>
+                        <li>Pomarańczowy</li>
+                    </ul>
+                </div>
+                <div class="drop_down_list">
+                    <span class="list_label">Wybierz materiał</span>
+                    <span class="list_arrow"></span>
+                    <ul class="list_panel">
+                        <li>Tkanina</li>
+                        <li>Skóra</li>
+                    </ul>
+                </div>
+                <div class="checkbox check-box">
+                    <input type="checkbox" id="transport" data-transport-price="200">
+                    <label for="transport">Transport</label>
+                </div>
+                <!--<div class="checkbox"></div>-->
+                <!--<span class="list_label inline_text">Transport</span>-->
+            </div>
+        </section>
+
+        <section class="image_part inline">
+            <img src="images/red_chair.png">
+        </section>
+
+        <section class="summary_part inline">
+            <header class="align_right">
+                <h3 class="calc">PODSUMOWANIE</h3>
+                <span class="green_bell"></span>
+            </header>
+
+            <div class="summary_panel clearfix">
+                <div class="panel_left">
+                    <h4 class="title">Twój fotel</h4>
+                    <span class="color"></span>
+                    <span class="pattern"></span>
+                    <span class="transport"></span>
+                </div>
+                <div class="panel_right">
+                    <h4 class="title value"></h4>
+                    <span class="color value"></span>
+                    <span class="pattern value"></span>
+                    <span class="transport value"></span>
+                </div>
+                <div class="sum_label">SUMA</div>
+                <div class="sum"><strong></strong></div>
+            </div>
+            <a href="" class="green_button">Zamawiam</a>
+        </section>
+    </div>
+</section>     
+</div>      
   <!--Sekcja formularza kontaktowego  -->  
-  <section>
+  <section  id="contact">
     <div class="container clearfix">
-     
+     <h3 class="borderbottom">
+      <span>KONTAKT</span>
+      </h3>
+      <form>
+        <div class="formleft clearfix">
+          <label>
+            <input type="text" placeholder="Imię">
+          </label>
+          <label>
+            <input type="email" placeholder="email">
+          </label>
+          <label>
+            <textarea placeholder="Wiadomość"></textarea>
+          </label>
+        </div>  
+        <div class="formright clearfix">
+          <div class="checkimg">
+          </div>
+            <input type="checkbox">
+            <p class="check">
+              Zgadzam się na przetwarzanie danych osobowych
+            </p>
+          <input type="submit" value="WYŚLIJ">
+        </div>
+      </form>
     </div>
   </section>        
   <footer>
     <div class="container clearfix">
+     <p>
+    Copyright 2014 | All rights reserved. - Sit On Chair  
+    </p>
+      <div class="icons">
+        <img src="images/flickr.png">
+        <img src="images/vimeo.png">
+        <img src="images/pinterest.png">
+        <img src="images/twitter.png">
       
+      <h3>
+        SIT <span>ON</span> CHAIR
+      </h3>
+        </div>
     </div>
   </footer>
 </body>
